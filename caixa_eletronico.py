@@ -28,13 +28,13 @@ while flag == True:
         deposito = 0
 
         while deposito <= 0:
-            deposito = int(input('Informe o valor para depósito: R$ '))
+            deposito = float(input('Informe o valor para depósito: R$ '))
             if deposito <= 0:
                 voltar = input('Valor inválido\nVoltar ao menu? (s/n) ').lower()
                 if voltar == 'n':
                     voltar1 = input('Deseja informar um novo valor para depósito? (s/n) ')
                     if voltar1 == 's':
-                        deposito = int(input('Informe o valor para depósito: R$ '))
+                        deposito = float(input('Informe o valor para depósito: R$ '))
                     else:
                         print('Saindo...')
                         flag = False
@@ -54,7 +54,7 @@ while flag == True:
                 if voltar == 'n':
                     voltar1 = input('Deseja informar um novo valor para saque? (s/n) ')
                     if voltar1 == 's':
-                        saque = int(input('Informe o valor para saque: R$ '))
+                        saque = float(input('Informe o valor para saque: R$ '))
                     else:
                         print('Saindo...')
                         flag = False
@@ -66,3 +66,7 @@ while flag == True:
     elif action == '4':
         print('Saindo...')
         flag = False
+
+    else:
+        action = input('Opção inválida!')
+        
