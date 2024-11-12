@@ -1,5 +1,5 @@
 
-saldo = 1000
+saldo = 0
 deposito = 0
 saque = 0
 action = 0
